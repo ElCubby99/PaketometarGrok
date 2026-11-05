@@ -11,7 +11,7 @@ Primary vocabulary in the UI: prijava, iskustvo, obrazac, mjerenje.
 - Next.js App Router + TypeScript
 - Locked tokens in `src/styles/tokens.css` (ink, field, panel, grid, gauge, pressure)
 - Leaflet + OpenStreetMap tiles only
-- IBM Plex Sans and IBM Plex Mono (latin-ext, for Croatian diacritics)
+- IBM Plex Sans and IBM Plex Mono, vendored in `src/fonts` (OFL). The build does not fetch Google Fonts. The files include Latin Extended, so Croatian diacritics render.
 - English component and class names, Croatian visible copy (`src/i18n/locale.ts`)
 
 ## Routes
