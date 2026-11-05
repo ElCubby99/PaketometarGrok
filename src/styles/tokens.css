@@ -1,0 +1,52 @@
+/* Paketometar design tokens — LOCKED. Do not invent alternate colors/fonts. */
+
+:root {
+  /* Colors */
+  --ink: #0C1C28;
+  --field: #D9E2E8;
+  --panel: #F4F7F9;
+  --grid: #6B7C86;
+  --gauge: #B86A1E;
+  --pressure: #8B2E24;
+
+  /* Heatmap scale (low → high) */
+  --heat-low: var(--field);
+  --heat-mid: #C9B89A;
+  --heat-high: var(--gauge);
+  --heat-peak: var(--pressure);
+
+  /* Derived */
+  --border: color-mix(in srgb, var(--grid) 35%, transparent);
+  --border-strong: color-mix(in srgb, var(--grid) 55%, transparent);
+  --ink-muted: color-mix(in srgb, var(--ink) 72%, var(--grid));
+  --focus-ring: var(--gauge);
+  --focus-offset: 2px;
+
+  /* Type */
+  --font-display: "IBM Plex Sans", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, monospace;
+
+  --text-body: 16px;
+  --leading-body: 24px;
+  --text-small: 13px;
+  --leading-small: 20px;
+  --text-display-min: 28px;
+  --text-display-max: 40px;
+  --leading-display: 1.15;
+  --text-data: 13px;
+  --tracking-display: -0.02em;
+  --tracking-data: 0.04em;
+
+  /* Layout rhythm */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --content-max: 1120px;
+  --radius: 2px;
+
+  /* Motion */
+  --motion-fast: 120ms;
+}
