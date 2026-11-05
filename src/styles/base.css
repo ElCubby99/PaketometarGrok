@@ -1,5 +1,5 @@
 /* Paketometar base — layout, typography, gauge strip, a11y.
-   Fonts are loaded with next/font (latin-ext). Do not add a seventh brand color. */
+   IBM Plex is vendored and loaded with next/font/local. Do not add a seventh brand color. */
 
 *,
 *::before,
